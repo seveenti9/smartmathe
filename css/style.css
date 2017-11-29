@@ -1,0 +1,83 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+  background-color:#f6f6f6f6;
+}
+
+.topBar{
+  height: 30px;
+  background: #097cbe;
+}
+
+.container{
+  width:960px;
+  color:#555;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+}
+
+.header{
+  width:960px;
+  color:#555;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+  margin-top: 1.5em;
+  height: 100px;
+}
+
+.navElement{
+  border: 1px transparent solid;
+  color:#063559;
+  font-size:20px;
+  text-decoration: none;
+  float:left;
+  width:25%
+  padding:auto;
+  margin-left:4%;
+  margin-right:4%;
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+.navElement:hover{
+  color:#097cbe;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
+}
+
+.navElement:active{
+  border: 1px black dotted;
+  box-sizing:border-box;
+}
+
+.NAV{
+  margin-top: 0;
+  width: 100%;
+  height: auto;
+  float:left;
+  box-sizing:border-box;
+}
+
+.logo{
+  height: 100px;
+  float: left;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
+}
+
+.content{
+  background-image: url("bg.jpg");
+}
