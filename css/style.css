@@ -6,6 +6,7 @@
 body{
   background-color:#f6f6f6f6;
   background-image: url("bg.jpg");
+	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -14,39 +15,25 @@ body{
   width:960px;
   font-family: Verdana, Geneva, sans-serif;
   margin: auto;
+	text-align: center;
 }
 
 .header{
+	font-size: 20px;
 	background-color: white;
   width:100%;
 	margin:0;
-  /*color:#555;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: auto;
-	a;
-  margin-top: 1.5em;*/
-  height: 130px;
-	border-top: 25px #097cbe solid;
-	border-bottom: 3px #097cbe solid;
+  height: 60px;
+	border-bottom: 15px #097cbe solid;
+	position: fixed;
 }
 
 .navElement{
-  border: 1px transparent solid;
-  color:#063559;
-  font-size:20px;
-  text-decoration: none;
-  float:left;
-  width:25%
-  padding:auto;
-  margin-left:4%;
-  margin-right:4%;
-  margin-top: 2em;
-  margin-bottom: 3em;
-}
-
-.navElement:hover{
-  color:#097cbe;
-	text-shadow: #999 0px 0px 0.5px;
+	width:20%;
+	float: left;
+	padding: 17.5px 0;
+	margin: 0;
+	text-align: center;
   -webkit-font-smoothing: antialiased;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -57,25 +44,48 @@ body{
                                 supported by Chrome and Opera */
 }
 
+.navElement:hover{
+	background-color: #097cbe;
+}
+
 .navElement:active{
-	color:#59bcff;
-  /*border: 1px black dotted;*/
+	background-color: #59bcff;
+}
+
+.navElement a{
+  color:#063559;
+  text-decoration: none;
+}
+
+.navElement:hover a{
+  color:#fff;
+	text-shadow: #999 0px 0px 0.5px;
+}
+
+.navElement:active a{
+	color:#fff;
   box-sizing:border-box;
 }
 
 .NAV{
-	background-color: white;
-	width:960px;
+	float: left;
+	width:calc(100% - 60px);
 	color:#555;
 	font-family: Arial, Helvetica, sans-serif;
-	padding-top: 15px;
 	margin: auto;
-	height: 100%;
+	height: 60px;
   box-sizing:border-box;
 }
 
+.logocontainer{
+	float: left;
+	margin: 5px;
+	height: 50px;
+	width: 50px;
+}
+
 .logo{
-  height: 100px;
+  height: 50px;
   float: left;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -86,12 +96,47 @@ body{
                                 supported by Chrome and Opera */
 }
 
+
+.NAVcontainer
+{
+	width: 960px;
+	margin: 0 auto;
+}
+
 .BGcontent{
+	-webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
 	text-shadow: #000 0px 2px 2px;
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+	width: 75%;
+	color: white;
+	padding-top: 0;
+	padding-bottom: 10em;
+	padding-left: auto;
+	padding-right: auto;
+	margin: auto;
+}
+
+.BGTitle{
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	 -khtml-user-select: none; /* Konqueror HTML */
+		 -moz-user-select: none; /* Firefox */
+			-ms-user-select: none; /* Internet Explorer/Edge */
+					user-select: none; /* Non-prefixed version, currently
+																supported by Chrome and Opera */
+	text-shadow: #000 0px 2px 2px;
+	text-align: center;
 	-webkit-font-smoothing: antialiased;
 	color: white;
 	padding-top: 10em;
-	padding-bottom: 10em;
+	padding-bottom: 3em;
 	padding-left: auto;
 	padding-right: auto;
 }
@@ -100,23 +145,103 @@ body{
 	float: left;
 	background-color: white;
 	border-left: 15px #097cbe solid;
-	height: 230px;
+	height: 22.5em;
 	margin: 0.5em;
-	width: 43%;
-  box-sizing:content-box;
+	width: calc(33% - 1.75em);
 }
+
 .panelIcon{
+	-webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
 	margin: 1em;
-	margin-right: 0;
-	float: left;
 	width: 75px;
 	height: 75px;
-	margin-top: auto;
-	margin-bottom: auto;
+	margin: auto;
+	margin-top: 1em;
 }
 
 .panelText{
+	text-align: center;
 	margin: 1em;
-	float: left;
-	width: calc(100% - 75px - 3em);
+	width: auto;
+}
+
+.panelText a{
+	color: #063559;
+	text-decoration: none;
+}
+
+.panelText a:hover{
+	color: #097cbe;
+}
+
+.panelText a:active{
+	color: #59bcff;
+}
+
+h2{
+	color: #097cbe;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.button{
+	font-size: 20px;
+	font-family: Verdana, Geneva, sans-serif;
+	color: #fff;
+	text-shadow: #999 0px 1px 1px;
+	-webkit-font-smoothing: antialiased;
+	text-decoration: none;
+	text-align: center;
+	padding: 1.5em 3em;
+	background-color: #097cbe;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	 -khtml-user-select: none; /* Konqueror HTML */
+		 -moz-user-select: none; /* Firefox */
+			-ms-user-select: none; /* Internet Explorer/Edge */
+					user-select: none; /* Non-prefixed version, currently
+																supported by Chrome and Opera */
+}
+
+.button:hover{
+	color: #fff;
+	background-color: #59bcff;
+}
+
+.button:active{
+	color: #063559;
+	background-color: #097cbe;
+}
+
+.buttonFrame{
+	margin-bottom: 10em;
+}
+
+
+.clear{
+	clear: both;
+}
+
+
+.footer{
+	margin-top: 3em;
+	width: 100%;
+	height: 60px;
+	background-color: #097cbe;
+}
+
+.footerContainer{
+	font-family: Verdana, Geneva, sans-serif;
+	width: 960px;
+	margin: auto;
+	text-align: right;
+	font-size: small;
+	padding-top: calc(60px - 2em);
+	color: #fff;
 }
