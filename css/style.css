@@ -5,27 +5,29 @@
 
 body{
   background-color:#f6f6f6f6;
-}
-
-.topBar{
-  height: 30px;
-  background: #097cbe;
+  background-image: url("bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .container{
   width:960px;
-  color:#555;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, sans-serif;
   margin: auto;
 }
 
 .header{
-  width:960px;
-  color:#555;
+	background-color: white;
+  width:100%;
+	margin:0;
+  /*color:#555;
   font-family: Arial, Helvetica, sans-serif;
   margin: auto;
-  margin-top: 1.5em;
-  height: 100px;
+	a;
+  margin-top: 1.5em;*/
+  height: 130px;
+	border-top: 25px #097cbe solid;
+	border-bottom: 3px #097cbe solid;
 }
 
 .navElement{
@@ -44,6 +46,8 @@ body{
 
 .navElement:hover{
   color:#097cbe;
+	text-shadow: #999 0px 0px 0.5px;
+  -webkit-font-smoothing: antialiased;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
    -khtml-user-select: none; /* Konqueror HTML */
@@ -54,15 +58,19 @@ body{
 }
 
 .navElement:active{
-  border: 1px black dotted;
+	color:#59bcff;
+  /*border: 1px black dotted;*/
   box-sizing:border-box;
 }
 
 .NAV{
-  margin-top: 0;
-  width: 100%;
-  height: auto;
-  float:left;
+	background-color: white;
+	width:960px;
+	color:#555;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-top: 15px;
+	margin: auto;
+	height: 100%;
   box-sizing:border-box;
 }
 
@@ -78,6 +86,37 @@ body{
                                 supported by Chrome and Opera */
 }
 
-.content{
-  background-image: url("bg.jpg");
+.BGcontent{
+	text-shadow: #000 0px 2px 2px;
+	-webkit-font-smoothing: antialiased;
+	color: white;
+	padding-top: 10em;
+	padding-bottom: 10em;
+	padding-left: auto;
+	padding-right: auto;
+}
+
+.panel{
+	float: left;
+	background-color: white;
+	border-left: 15px #097cbe solid;
+	height: 230px;
+	margin: 0.5em;
+	width: 43%;
+  box-sizing:content-box;
+}
+.panelIcon{
+	margin: 1em;
+	margin-right: 0;
+	float: left;
+	width: 75px;
+	height: 75px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.panelText{
+	margin: 1em;
+	float: left;
+	width: calc(100% - 75px - 3em);
 }
